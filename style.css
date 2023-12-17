@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #230903;
+}
+
+/* Nav Bar*/
+.nav-one {
+    box-sizing: border-box;
+    font-family: "Geologica", sans-serif;
+    text-transform: uppercase;
+    background-color: #230903;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+.navb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navb li {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+li:hover {
+    background-color: #f7e1d7;
+}
+
+
+.navb li a {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Agbalumo", sans-serif;
+    text-decoration: none;
+}
+
+
+.navb li a:hover {
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+.navb-second {
+    position: absolute;
+    display: none;
+    background-color: #230903;
+    text-align: start;
+    padding: 2px
+}
+
+
+.navb-second>li {
+    border-bottom: solid 1px #fff;
+    text-align: start;
+    text-justify: initial;
+    background-color: #230903;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+
+.navb-second>li:hover {
+    background-color: #f7e1d7;
+}
+
+.fa-solid {
+    padding: 2px;
+}
+
+/* Link Cdn*/
+ol ul {
+    padding-left: 0px;
+}
+
+.acerca-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main */
+
+.img-title {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.7)),
+        url(https://images.unsplash.com/photo-1606486544554-164d98da4889?auto=format&fit=crop&q=60&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3Jhbm9zJTIwZGUlMjBjYWZlfGVufDB8fDB8fHww);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Agbalumo", sans-serif;
+    font-size: 4rem;
+    text-transform: capitalize;
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.p-div {
+    backdrop-filter: blur;
+}
+
+#introduccion {
+    font-family: "Geologic", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-justify: center;
+    color: #f7e1d7fb;
+    margin: 0;
+    filter: none;
+}
+
+
+
+/* Main Cartas */
+
+.section-cartas {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.cartas-container {
+    background-color: #311E11;
+    height: 100%;
+}
+
+.title-cartas {
+    text-transform: uppercase;
+    font-family: "Agbalumo", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+.cartas-second {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.carta-any {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+    align-content: center;
+    width: 450px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f7e1d7;
+    transition: all 400ms ease;
+    text-align: center;
+}
+
+
+.carta-any:hover {
+    box-shadow: 0.3125rem 0.3125rem 1.25rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%);
+}
+
+
+.carta-any img {
+    width: 100%;
+}
+
+.carta-any a {
+    display: inline-block;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    color: #230903;
+    border: 0.0625rem solid #230903;
+    border-radius: 0.3125rem;
+    transition: all 40ms ease;
+}
+
+
+.carta-any a:hover {
+    background-color: #230903;
+    color: #fff;
+}
+
+
+
+
+.cartas:hover>.navb-second {
+    display: block;
+}
+
+
+/* Main Carousel*/
+
+.carousel p {
+    background-color: #230903;
+    color: #fff;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+
+
+/* Main Carousel Caption*/
+
+.carousel-caption h4 {
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* Main Ubicacion*/
+#ubicacion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ubicacion h4 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: #f7e1d7;
+    padding: 1.5625rem;
+}
+
+.ubi {
+    transition: all 1110ms ease;
+}
+
+
+#redes {
+    background-color: #230903;
+    color: #fff;
+    padding: 5rem 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+.links-redes {
+    text-align: center;
+    text-transform: uppercase;
+    text-orientation: mixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    columns: 2;
+}
+
+.social-links a:visited {
+    color: #fff;
+}
+
+.social-links a:active {
+    color: green;
+}
+
+
+h4 {
+    background-color: #f7e1d7;
+    color: black;
+    font-size: 3.4375rem;
+}
+
+
+@media (min-width: 350px) and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    .nav-one {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+
+    .img-title {
+        height: 100vh;
+        /* Reducir la altura del contenedor en pantallas pequeñas */
+        background-size: 100% auto;
+
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .cartas-second {
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+.navbar-style {
+    background-color: #f7e1d7 !important;
+    color: #230903 !important;
+}
